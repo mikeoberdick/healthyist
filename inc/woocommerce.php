@@ -1,7 +1,7 @@
-<?php
-/**
- * WooCommerce Customization
- *
- * @package understrap
- */
-
+<?php
+/**
+ * WooCommerce Customization
+ *
+ * @package understrap
+ */
+

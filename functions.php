@@ -6,33 +6,45 @@
  */
 
 /**
- * Theme setup
- */
-require '/inc/setup.php';
-
-/**
  * Advanced Custom Fields
  */
-require '/inc/acf.php';
+require get_stylesheet_directory() . '/inc/acf.php';
 
 /**
- * Advanced Custom Fields
+ * Setup Dashboard
  */
-require '/inc/woocommerce.php';
+require get_stylesheet_directory() . '/inc/dashboard.php';
 
 /**
- * Register theme styles
- *
- * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+ * Setup Theme Menus
  */
-require '/inc/styles.php';
+require get_stylesheet_directory() . '/inc/menus.php';
 
 /**
  * Register theme scripts
  *
  * @link https://developer.wordpress.org/reference/functions/wp_enqueue_script/
  */
-require '/inc/scripts.php';
+require get_stylesheet_directory() . '/inc/scripts.php';
+
+/**
+ * Theme setup
+ */
+require get_stylesheet_directory() . '/inc/setup.php';
+
+/**
+ * Register theme styles
+ *
+ * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+ */
+require get_stylesheet_directory() . '/inc/styles.php';
+
+/**
+ * Register Users
+ *
+ * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+ */
+require get_stylesheet_directory() . '/inc/users.php';
 
 /**
  * Customize widget areas
@@ -40,4 +52,8 @@ require '/inc/scripts.php';
  * @link https://codex.wordpress.org/Function_Reference/unregister_sidebar
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-require '/inc/widgets.php';
+require get_stylesheet_directory() . '/inc/widgets.php';
+/**
+ * Advanced Custom Fields
+ */
+require get_stylesheet_directory() . '/inc/woocommerce.php';
