@@ -13,20 +13,15 @@ Template:    Understrap
 /*------------------------------------------------*/
 
 h1, h2, h3, h4, h5 {
-	
+	color: #000000;
 }
 
 body {
-	color: #b2b2b2;
-	font-family: 'open-sans', sans-serif;
-}
-
-.mb {
-	margin-bottom: 10vh;
-}
-
-.pb {
-	padding-bottom: 5vh;
+	color: #000000;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.625;
 }
 
 /*------------------------------------------------*/
@@ -39,7 +34,9 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
-
+.navbar {
+		background-color: $brand-primary;
+	}
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
