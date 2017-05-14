@@ -34,8 +34,23 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
+#navbarNavDropdown {
+	justify-content: flex-end;
+}
+
 .navbar {
 		background-color: $brand-primary;
+		position: fixed;
+		width: 100%;
+		@include shadow;
+		z-index: 1;
+
+		a {
+	    	color: #000000;
+	    	font-weight: bold;
+	    	font-size: 18px;
+	    	text-transform: uppercase;
+			}
 	}
 
 /*------------------------------------------------*/
@@ -47,6 +62,30 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
+#page-wrapper {
+	padding-top: 56px;
+}
+
+//Homepage
+
+.heroSection {
+	background-size: cover;
+    background-position: center center;
+	min-height: 350px;
+
+	.opacityLayer {
+		background-color: rgba(0,0,0,.5);
+	}
+
+	#hpCTA {
+			h1 {
+				color: #ffffff;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 48px;
+				}
+		
+			}
+}
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -93,6 +132,27 @@ body {
 			}
 		}
 	}
+}
+
+#bottomFooter {
+	background-color: $brand-secondary;
+	color: #ffffff;
+    font-size: 12px;
+    padding: 40px 0;
+    @include media-breakpoint-down(sm) { text-align: center;  }
+
+    .footerLinks {
+    	text-align: center;
+    	@include media-breakpoint-up(sm) { text-align: right;  }
+    }
+
+    a {
+    	color: #ffffff;
+		
+		&:hover {
+			text-decoration: none;
+		}
+    }
 }
 
 /*------------------------------------------------*/

@@ -37,40 +37,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- .container -->
 
-	<div class = "container-fluid">
+</div><!-- wrapper-footer -->
 
-		<div id = "bottomFooter" class="row">
+<div id = "bottomFooter">
+		<div class = "container">
 
-			<div class="col-md-12">
+		<footer id="colophon">
+				<div class = "row">
+					<div class = "col-sm-6">
+						<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span>
+					</div>
 
-				<footer class="site-footer text-center" id="colophon">
-
-					<div class="site-info">
-					
-					<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span><br />
-					<span>Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- .container-fluid -->
-
-</div><!-- wrapper end -->
+					<div class = "col-sm-6 footerLinks">
+						<a href = "#" class = "mr-2">Terms</a><a href = "#">Privacy</a>
+					</div>
+				</div>
+		</footer><!-- #colophon -->
+		
+		</div><!-- .container -->
+	</div><!-- #bottomFooter -->
 
 </div><!-- #page-wrapper -->
 
 <?php wp_footer(); ?>
-
-<script>
-jQuery('button').on('click', function(){
-  jQuery('body').toggleClass('open');
-});
-</script>
 
 </body>
 
