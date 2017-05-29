@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 
 					<div class = "col-sm-6 footerLinks">
-						<a href = "#" class = "mr-2">Terms</a><a href = "#">Privacy</a>
+						<a href = "<?php echo bloginfo('url'); ?>/terms-of-use" class = "mr-2">Terms</a><a href = "<?php echo bloginfo('url'); ?>/privacy-policy">Privacy</a>
 					</div>
 				</div>
 		</footer><!-- #colophon -->
