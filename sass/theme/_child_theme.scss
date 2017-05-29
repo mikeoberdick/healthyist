@@ -99,6 +99,27 @@ body {
 	padding-top: 56px;
 }
 
+//Flyin
+
+.et_bloom_optin_1 {
+	color: #000000;
+
+	h2 {
+		color: #000000;
+	}
+	.et_bloom_form_container {
+		.et_bloom_form_content {
+			background-image: url(/wp-content/uploads/2016/05/SlideIn-Background_420x235-e1462892075457.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    height: 150px;
+		    padding: 15px;
+		    background-color: #ffffff !important;
+		}
+	}
+}
+    
+
 //Homepage
 
 .heroSection {
@@ -128,6 +149,33 @@ body {
 		
 			}
 }
+
+.ctaButton {
+	text-align: center;
+	h4 {
+		margin-bottom: 0;
+	}
+}
+
+// Login/Enroll
+
+.nav-tabs {
+	border: 0;
+}
+
+.tab-content {
+	border: solid 1px $brand-primary;
+	padding: 15px;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border-color: #eceeef  #eceeef  $brand-primary;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-color: $brand-primary $brand-primary #ffffff;
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/

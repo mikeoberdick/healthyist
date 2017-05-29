@@ -14,14 +14,28 @@ get_header();
 
 ?>
 
+<header class="entry-header">
+	<div class = "titleWrapper">
+		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+	</div>
+</header><!-- .entry-header -->
+
 <div class="wrapper" id="page-wrapper">
 
-	<?php while ( have_posts() ) : the_post(); ?>
+	<div class="container" id="content" tabindex="-1">
+
+		<main class="site-main" id="main">
+
+			<?php while ( have_posts() ) : the_post(); ?>
 
 	<?php
 
 	if ( is_page( 'homepage' ) ) {
 		get_template_part( 'template-parts/content', 'home' );
+	}
+
+	else if ( is_page( 'loginenroll' ) ) {
+		get_template_part( 'template-parts/content', 'login' );
 	}
 
 	else {
@@ -38,6 +52,10 @@ get_header();
 	?>
 
 	<?php endwhile; // end of the loop. ?>
+
+			</main><!-- #main -->
+
+	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
 
