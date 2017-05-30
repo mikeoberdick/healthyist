@@ -9311,7 +9311,7 @@ body {
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
-#page-wrapper {
+#page-wrapper, #single-wrapper {
   padding-top: 56px; }
 
 .et_bloom_optin_1 {
@@ -9346,6 +9346,8 @@ body {
 
 .ctaButton {
   text-align: center; }
+  .ctaButton a {
+    padding: 25px; }
   .ctaButton h4 {
     margin-bottom: 0; }
 
@@ -9361,6 +9363,12 @@ body {
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   border-color: #81c700 #81c700 #ffffff; }
+
+.single-sfwd-lessons .entry-title, .sfwd-courses-template-default .entry-title {
+  margin-top: 50px; }
+
+.single-sfwd-lessons .entry-meta, .sfwd-courses-template-default .entry-meta {
+  margin-bottom: 25px; }
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
