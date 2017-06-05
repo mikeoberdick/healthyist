@@ -1,7 +1,3 @@
-<?php
-//Login Page Content
-?>
-
 <div class="row">
 	<div class="col-md-4 offset-md-4">
 		

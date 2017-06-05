@@ -9282,6 +9282,13 @@ body {
   font-weight: 300;
   line-height: 1.625; }
 
+.blueBG {
+  background-color: #c6d9f0;
+  padding: 15px;
+  margin-bottom: 15px; }
+  .blueBG p:last-of-type {
+    margin-bottom: 0; }
+
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/

@@ -38,6 +38,10 @@ get_header();
 		get_template_part( 'template-parts/content', 'login' );
 	}
 
+	else if ( is_page( 'welcome' ) ) {
+		get_template_part( 'template-parts/content', 'welcome' );
+	}
+
 	else {
 	get_template_part( 'loop-templates/content', 'page' );
 	}
