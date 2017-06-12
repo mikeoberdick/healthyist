@@ -60,7 +60,7 @@
 			</div>
 
 			<div class = "ctaButton">
-				<a class = "btn btn-primary btn-large" href = "<?php echo bloginfo('url'); ?>/login-enroll"><h4>COURSE LOGIN/ENROLL</h4></a>
+				<a class = "btn btn-primary btn-large" href = "<?php echo bloginfo('url'); ?>/login"><h4>COURSE LOGIN/ENROLL</h4></a>
 			</div>
 		</div>		
 	</div><!-- .row -->
