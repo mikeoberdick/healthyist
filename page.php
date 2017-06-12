@@ -34,8 +34,12 @@ get_header();
 		get_template_part( 'template-parts/content', 'home' );
 	}
 
-	else if ( is_page( 'loginenroll' ) ) {
+	else if ( is_page( 'login' ) ) {
 		get_template_part( 'template-parts/content', 'login' );
+	}
+
+	else if ( is_page( 'enroll' ) ) {
+		get_template_part( 'template-parts/content', 'enroll' );
 	}
 
 	else if ( is_page( 'welcome' ) ) {

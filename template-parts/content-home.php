@@ -60,7 +60,7 @@
 			</div>
 
 			<div class = "ctaButton">
-				<a class = "btn btn-primary btn-large" href = "<?php echo bloginfo('url'); ?>/lessons/week-1/"><h4>CLICK HERE to begin with the Week 1 Lesson</h4></a>
+				<a class = "btn btn-primary btn-large" href = "<?php echo bloginfo('url'); ?>/login-enroll"><h4>COURSE LOGIN/ENROLL</h4></a>
 			</div>
 		</div>		
 	</div><!-- .row -->

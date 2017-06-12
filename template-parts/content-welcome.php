@@ -1,7 +1,3 @@
-
-
-<div class = "container">
-
 <header class="entry-header">
 	<div class = "titleWrapper">
 		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
@@ -9,21 +5,33 @@
 </header><!-- .entry-header -->
 
 	<div class="row">
-		<div class = "col-sm-12">
-			<p style = "font-weight: bold;">You've enrolled succesfully for the Healthyist course!  Excellent!</p>
+		<div class = "col-sm-8">
 
-			<p>Healthyist will be your personal guide for the next 25 weeks, empowering you to adopt (andnaturally sustaining for the rest of your life) basic practical medically-smart lifestyle behaviors that areessential forpreventionand recoveryfrom chronic disease.</p>
+		<?php global $current_user;
+			get_currentuserinfo();
+			?>
 
-			<p>The Healthyist program is about you taking one small positive manageable step every day.</p>
+			<p>Hello,  <?php echo $current_user->user_firstname ?></p>
+			
+			<p>This is your home-base page for accessing the Healthyist course.</p>
 
-			<p>If you are reading this, you are ready to start Healthyist right now. There will not be a better time.</p>
+			<p>The panel to your right will show you where you are in your Healthyist journey.</p>
 
-			<p>Please click on the button below to link to the first Lesson, "Week 1: Foundation"</p>
+			<p>Click the RESUME button below to return to where you were in the Lessons when you last left, or to begin with “Lesson 1: Foundations” if you are new to Healthyist:</p>
+
+			<p>You may return to an earlier Lesson at any time by clicking on that Lesson listed in the right panel.</p>
+
+			<p>You cannot access a future Lesson until 7 days have expired from you starting the previous Lesson. This ensures that you move through the Lessons in order and that you spend one full week practicing the objectives of each Lesson</p>
+
+			<p>Remember, Healthyist is a journey, and just the beginning of the rest of your life at that. It is not a race to finish.</p>
 
 			<div class = "text-center">
-				<a class = "btn btn-primary btn-large" href = "<?php echo bloginfo('url'); ?>/lessons/week-1/"><span style = "font-weight: bold;">Begin the Week 1 Lesson</span></a>
+				<?php echo do_shortcode('[uo_learndash_resume]'); ?>
 			</div>
 
-		</div>		
+		</div>
+
+		<div id = "ld_sidebar" class = "col-sm-4">
+			<?php dynamic_sidebar('ld_sidebar'); ?>
+		</div>
 	</div><!-- .row -->
-</div><!-- .container -->

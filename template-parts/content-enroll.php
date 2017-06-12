@@ -5,7 +5,7 @@
 </header><!-- .entry-header -->
 
 <div class="row">
-	<div class="col-md-4 offset-md-4">
-	  	<?php echo do_shortcode ('[ninja_form id=2]'); ?>
+	<div class="col-md-8 offset-md-2">
+	  		<?php echo do_shortcode ('[ninja_form id=4]'); ?>
 	</div>
 </div><!-- .row -->
