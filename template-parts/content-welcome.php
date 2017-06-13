@@ -31,7 +31,7 @@
 
 		</div>
 
-		<div id = "ld_sidebar" class = "col-sm-4">
+		<div class="col-md-4 widget-area" id="ld-sidebar" role="complementary">
 			<?php dynamic_sidebar('ld_sidebar'); ?>
-		</div>
+		</div><!-- #secondary -->
 	</div><!-- .row -->
