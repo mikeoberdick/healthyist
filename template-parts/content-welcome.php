@@ -7,23 +7,30 @@
 	<div class="row">
 		<div class = "col-sm-8">
 
-		<?php global $current_user;
-			get_currentuserinfo();
-			?>
+		<?php  $current_user = wp_get_current_user(); ?>
 
-			<p>Hello,  <?php echo $current_user->user_firstname ?></p>
+			<p>Hi <?php echo $current_user->user_firstname; ?>,</p>
 			
-			<p>This is your home-base page for accessing the Healthyist course.</p>
+			<p>This is your Healthyist course home-base page that will display when you first Enroll and each time you login to return to the Healthyist course.</p>
 
-			<p>The panel to your right will show you where you are in your Healthyist journey.</p>
+			<p>From this page you can START/RESUME the course, see your progress, and access past Lessons for review</p>
 
-			<p>Click the RESUME button below to return to where you were in the Lessons when you last left, or to begin with “Lesson 1: Foundations” if you are new to Healthyist:</p>
+			<p>The right-side panel on this page:</p>
 
-			<p>You may return to an earlier Lesson at any time by clicking on that Lesson listed in the right panel.</p>
+			<ul>
+				<li>Shows <span style = "font-weight: 700;">your Progress</span> along your Healthyist journey.</li>
+				<li>Allows you to <span style = "font-weight: 700;">access past Lessons</span> for review.</li>
+				<li>Shows <span style = "font-weight: 700;">your Achievements</span> along your journey.<br />
+				While you deserve a pat on the back with every day you are with Healthyist, at certain milestones along your course journey we want to recognize your commitment to Healthyist by providing you Achievement Badges.</li>
+			</ul>
 
-			<p>You cannot access a future Lesson until 7 days have expired from you starting the previous Lesson. This ensures that you move through the Lessons in order and that you spend one full week practicing the objectives of each Lesson</p>
+			<p><span style = "font-weight: 700;">Click the START/RESUME button</span> below to return to where you were in the Lessons when you last left, or to begin with “Lesson 1: Foundations” if you have just enrolled in Healthyist.</p>
 
-			<p>Remember, Healthyist is a journey, and just the beginning of the rest of your life at that. It is not a race to finish.</p>
+			<h3>Step-by-Step</h3>
+
+			<p>To ensure you move through the Lessons in order AND that you spend one full week practicing the objectives of each Lesson (because practice and repetition are all-important), you cannot advance to a future Lesson until you have spent seven days on the current Lesson.</p>
+
+			<p>Remember, Healthyist is not a race to finish, but rather is a journey; a process creating your new life foundation; the beginning of the best rest of your life.</p>
 
 			<div class = "text-center">
 				<?php echo do_shortcode('[uo_learndash_resume]'); ?>
