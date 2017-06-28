@@ -59,9 +59,11 @@
 				<p>You owe it to yourself to begin this Healthyist program immediately.  There is no reason to wait, and no reason to think about it.  This is about you doing what is right and necessary for your one life...and beginning right now.  This Healthyist program is meant for wherever your life is right now, whether you have time or not, whether your feel ready or not.  If you are reading this, your one life depends on you beginning this program...right now.  Healthyist will be positively life changing for you.  Let's Do It Together, beggining right now!</p>
 			</div>
 
-			<div class = "ctaButton">
+			<?php if (!is_user_logged_in()) { ?>
+				<div class = "ctaButton">
 				<a class = "btn btn-primary btn-large" href = "<?php echo bloginfo('url'); ?>/login"><h4>COURSE LOGIN/ENROLL</h4></a>
 			</div>
+			<?php } ?>
 		</div>		
 	</div><!-- .row -->
 </div><!-- .container -->

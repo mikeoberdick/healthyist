@@ -33,7 +33,7 @@
 			<p>Remember, Healthyist is not a race to finish, but rather is a journey; a process creating your new life foundation; the beginning of the best rest of your life.</p>
 
 			<div class = "text-center">
-				<a class = 'btn btn-primary btn-large' href = '<?php echo bloginfo('url'); ?>/lessons/week-1'>GET STARTED</a>
+				<?php echo do_shortcode('[uo_learndash_resume]'); ?>
 			</div>
 
 		</div>

@@ -46,6 +46,10 @@ get_header();
 		get_template_part( 'template-parts/content', 'welcome' );
 	}
 
+	else if ( is_page( 'welcome-back' ) ) {
+		get_template_part( 'template-parts/content', 'welcome_back' );
+	}
+
 	else {
 	get_template_part( 'loop-templates/content', 'page' );
 	}
